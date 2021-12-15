@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="options.css">
+</head>
+<body>
+<form id="options-form">
+    <table>
+        <tbody>
+        <tr>
+            <td class="center-aligned big-font" colspan="2">
+                TiddlyWiki Saver settings
+            </td>
+        </tr>
+        <tr>
+            <td class="left-aligned" colspan="2">
+                These settings apply to all TiddlyWiki files. Backup files are deleted only during subsequent
+                saves and only when they trigger either of the conditions.
+            </td>
+        </tr>
+        <tr>
+            <td class="left-aligned">
+                How many recent backup files should be kept. Zero means, no backups.
+                Valid values are from 0 to 100. When empty the default of 3 is used.
+            </td>
+            <td class="left-aligned">
+                <input id="number-of-backups" type="number" min="0" max="100" value="3">
+            </td>
+        </tr>
+        <tr>
+            <td class="left-aligned">
+                How much space in total can the backup files take (in MB). Valid values
+                are from 10 to 1000. Leave this empty to lift if you don't want to set the size limit.
+            </td>
+            <td class="left-aligned">
+                <input id="size-of-backups" type="number" min="10" max="1000" value="">
+            </td>
+        </tr>
+        <!-- This doesn't seem to make any difference in Firefox and probably should be shown only in Chrome -->
+        <tr>
+            <td class="left-aligned">
+                Hide "downloads shelf" from browser interface.
+                This is a global option, not limited to TiddlyWiki files.
+            </td>
+            <td class="left-aligned">
+                <input type="checkbox" id="hide-downloads-shelf">
+            </td>
+        </tr>
+        <tr>
+            <td class="center-aligned" colspan="2">
+                <button id="save-options" type="submit">Save</button>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</form>
+<script src="options.js"></script>
+</body>
+</html>

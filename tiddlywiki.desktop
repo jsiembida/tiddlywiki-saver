@@ -1,0 +1,13 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Terminal=false
+# Beware of special chars in the URL
+Exec=/opt/google/chrome/chrome --new-window --disable-default-apps --disable-sync --no-first-run --no-default-browser-check --app=${TIDDLYWIKI_FILE_URL}
+Name=TiddlyWiki
+Icon=tiddlywiki
+Keywords=wiki;tiddlywiki;
+# There are issues with --class option, see https://bugs.chromium.org/p/chromium/issues/detail?id=118613
+# But it seems that so far the URL derived window class works.
+StartupWMClass=${TIDDLYWIKI_WINDOW_CLASS}
+StartupNotify=true
