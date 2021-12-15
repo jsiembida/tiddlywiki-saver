@@ -1,0 +1,37 @@
+body {
+    width: min(50em, 90%);
+    margin: 0 auto;
+    border: 0;
+}
+
+table {
+    width: 100%;
+    border-spacing: 1em 2em;
+}
+
+.big-font {
+    font-size: larger;
+    font-weight: bolder;
+}
+
+.center-aligned {
+    text-align: center;
+}
+
+.right-aligned {
+    text-align: right;
+}
+
+.left-aligned {
+    text-align: left;
+}
+
+input {
+    min-width: 5em;
+    text-align: right;
+}
+
+button {
+    min-width: 5em;
+    text-align: center;
+}

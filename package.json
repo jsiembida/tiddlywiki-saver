@@ -1,0 +1,13 @@
+{
+	"name": "tiddlywiki-saver",
+	"version": "1.0.0",
+	"description": "Conveniently save and backup your local TiddlyWiki5 files.",
+	"scripts": {},
+	"devDependencies": {
+		"eslint": "^8.4.1",
+		"eslint-config-airbnb-base": "^15.0.0",
+		"eslint-plugin-import": "^2.25.3",
+		"eslint-plugin-json": "^3.1.0"
+	},
+	"dependencies": {}
+}
